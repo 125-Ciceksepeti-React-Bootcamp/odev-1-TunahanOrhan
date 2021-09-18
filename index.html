@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- font awesome -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>ÇiçekSepeti-İlkÖdev</title>
+</head>
+<body>
+    <nav>
+        <div class="brand"><img src="img/patikaLogo.png" alt=""></div>
+        <div class="searchSection">
+            <input type="text" placeholder="Search..">
+            <div class="searchIcon">
+                <i class="fas fa-search"></i>
+            </div>
+            
+        </div>
+        <div class="profilePhoto">
+            <img src="img/profilePhoto.jpg" alt="">
+        </div>
+    </nav>
+    <aside>
+        <ul>
+        <li><a href="" onclick="formOpen()">Form</a></li>
+        <li><a href="">Cards</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact</a></li>
+        </ul>
+    </aside>
+    <main>
+        <div class="formWrapper">
+            <form action="">
+                <input type="text" id="companyName" placeholder="Company Name">
+                <input type="text" id="title" placeholder="Title">
+                <input type="text" id="firstName" placeholder="First Name">
+                <input type="text" id="lastName" placeholder="Last Name">
+                <input type="text" id="mailAdd" placeholder="Mail Address">
+                <input type="text" id="phoneNum" placeholder="Phone Number">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Write Your Message.."></textarea>
+                <div class="radioGroup" id="jobFunc">
+                    <p>Job Function:</p>
+                    <input type="radio" name="jobFunc" value="Campaing Management"><label for="">Campaing Management</label>
+                    <input type="radio" name="jobFunc" value="CRM Administration"><label for="">CRM Administration</label>
+                    <input type="radio" name="jobFunc" value="Email Deployment"><label for="">Email Deployment</label>
+                    <input type="radio" name="jobFunc" value="Partner"><label for="">Partner</label>
+                    <input type="radio" name="jobFunc" value="Employee"><label for="">Employee</label>
+                </div>
+                <button type="submit" id="submitBtn">Submit</button>
+
+            </form>
+        </div>
+        <div class="cardsWrapper">
+
+        </div>
+    </main>
+</body>
+</html>

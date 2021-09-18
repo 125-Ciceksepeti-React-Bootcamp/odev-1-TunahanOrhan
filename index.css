@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background-color: #444AFF;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .brand img {
+    width: 100px;
+}
+
+nav .searchSection {
+    width: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav .searchSection .searchIcon {
+    background-color: #444AFF;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 5px;
+}
+
+nav .searchSection i {
+    margin: auto;
+    color: #fff;
+}
+
+nav .searchSection input {
+    height: 50px;
+    width: 100%;
+    padding: 0 20px 0 60px;
+    border-radius: 40px;
+    font-size: 1rem;
+    outline: none;
+}
+
+nav .profilePhoto img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+aside {
+    background-color: #fff;
+    width: 200px;
+    margin-top: 40px;
+    border-radius: 0 15px 15px 0;
+    display: inline-block;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 15px 30px;
+}
+
+aside ul li {
+    border-top: 2px solid #444AFF;
+    padding: 10px 0;
+    text-align: center;
+}
+
+aside ul li:first-child {
+    border-top: none;
+}
+
+
+aside ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    display: inline-block;
+    float: right;
+    margin-top: 40px;
+    /* width: 0; */
+    overflow: hidden;
+}
+
+
+
+main .formWrapper {
+    background-color: #fff;
+    height: 80vh;
+    width: 80%;
+    padding: 50px 60px;
+    border-radius: 20px;
+}
+
+main .formWrapper form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+                "a a . b b"
+                "c c . d d"
+                "e e . f f"
+                ". g g g ."
+                ". h h h ."
+                ". . k . .";
+
+}
+
+#companyName {
+    grid-area: a;
+}
+
+#title {
+    grid-area: b;
+}
+
+#firstName {
+    grid-area: c;
+}
+
+#lastName {
+    grid-area: d;
+}
+
+#mailAdd {
+    grid-area: e;
+}
+
+#phoneNum {
+    grid-area: f;
+}
+
+#message {
+    grid-area: g;
+}
+
+#jobFunc {
+    grid-area: h;
+}
+
+#submitBtn {
+    grid-area: k;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #444AFF;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: auto;
+}
+
+main .formWrapper form input {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    padding: 0 10px 5px 5px;
+    outline: none;
+}
+
+main .formWrapper form input[type="text"] {
+    border: none;
+    border-bottom: 3px solid #444AFF;
+}
+
+main .formWrapper form textarea {
+    border: none;
+    border-bottom: 3px solid #444AFF;
+    min-height: 35px;
+    max-height: 100px;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 400px;
+    max-width: 400px;
+    min-width: 400px;
+    margin: auto;
+    outline: none;
+}
+
+main .formWrapper form .radioGroup {
+    margin-top: 40px;
+}
+
+main .formWrapper form .radioGroup p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+main .formWrapper form .radioGroup input {
+    margin-right: 3px;
+    margin-left: 30px;
+}
